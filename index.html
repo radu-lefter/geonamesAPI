@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/css/styles.css">
+    <title>GeoNames Exercise</title>
+</head>
+<body>
+    <table>
+        <tr> 
+            <th id="header_one">API Name</th>
+            <th id="header_two">API Description</th>
+            <th id="header_three">Input</th>
+        </tr>
+        <tr>
+            <td>1. Cities and Placenames</td>
+            <td>This "cities" API will return data about the nearest cities to the coordinates provided. In this app, I used it to output the name and the population of the first city found. The input is populated with default values which can be changed.</td>
+            <td>
+                <label for="north">North</label><input type="text" id="north" value="78">
+                <label for="south">South</label><input type="text" id="south" value="34">
+                <label for="east">East</label><input type="text" id="east" value="56">
+                <label for="west">West</label><input type="text" id="west" value="82"><br>
+                <input type="submit" value="Submit" id="firstAPI">
+            </td>
+        </tr>
+        <tr>
+            <td>2. Wikipedia Fulltext Search</td>
+            <td>The "Wikipedia" API will return search results from the wikipedia site. In this app, I used it to output the summary of the first search result. The default value is London, but it can be changed.</td>
+            <td>
+                <label for="city">Enter city name</label><input type="text" id="city" value="London">
+                <input type="submit" value="Submit" id="secondAPI" >
+            </td>
+        </tr>
+        <tr>
+            <td>3. Postal Code Country Info</td>
+            <td>The "Postal Code" API will return data about the postcodes of 95 countries. In this app, I used it to get the country code and country name of the first seven countries.</td>
+            <td>
+                <input type="submit" value="Submit" id="thirdAPI">
+            </td>
+        </tr>
+        <tr>
+            <td id="column_one">Results</td>
+            <td id="column_two">Results</td>
+            
+        </tr>
+    </table>
+
+    <div id=”preloader”></div>
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+</body>
+</html>
